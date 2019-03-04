@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Da Blog</title>
+</head>
+<body>
+<div>
+    <h1>
+        {% block header %}
+        {% endblock header %}
+    </h1>
+    {% if user.is_authenticated %}
+    Yo {{user.username}}!
+    <p><a href="{% url 'logout' %}">Login</a></p>
+    {% else}
+    <p>You ain't logged in, son</p>
+    <a href="{% url 'login'}">Logout</a>
+    {% endif %}
+    {% block content %}
+    {% endblock content %}
+</div>
+Log In
+</body>
+</html>
