@@ -1,3 +1,6 @@
+### POINTS: 1
+### KEY: You were on right track, and the web app runs fine (Good Job!) however, you didn't link in authentication for filtering posts by logged in User
+
 # Django Authentication CW
 
 ### Exercise 1:
